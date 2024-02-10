@@ -6,8 +6,130 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+body{
+  background-image: url(./background.jpg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+h1{
+  text-align: center;
+}
+
+button{
+  margin-left: 10px;
+}
+.App{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+.header {
+  padding: 10px 20px;
+  text-align: center;
+  color: #505050;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: 20px;
+  border-radius: 5px;
+
+  box-shadow: 0 0 10px rgba(122, 62, 117, 0.4);
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 5px;
+  width: 60vw;
+  max-width: 600px;
+  height: 50px;
+  
+}
+
+.shortened-url {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(253, 149, 227, 0.4);
+}
+
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 40px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  
+}
+.input-field::placeholder {
+  font-size: 14px;
+  width: 80%;
+  height: 200px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  width: 20%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: #4ba0fa;
+}
+
+
+.error-message {
+  color: red;
+}
+.copy-button{
+  width: 20px;
+  height: 20px;
+  background-image: url('./copy-icon.png');
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.link{
+  color: #655ebc;
+  text-decoration: none;
+  
+}
+
+.tooltip{
+  color: #757575;
+}
+
+.shortened-url p{
+  color: #484848;
 }
